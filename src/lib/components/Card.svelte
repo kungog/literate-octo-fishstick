@@ -44,7 +44,7 @@
 
   div:first-child {
     @extend %shared;
-    background: #de4f3c;
+    background: #a6a377;
     transform: rotateY(185deg);
     font-size: 50px;
 
@@ -55,7 +55,7 @@
 
   div:last-child {
     @extend %shared;
-    background: #46b39d;
+    background: #283540;
     transform: rotateY(0deg);
 
     &:hover {
