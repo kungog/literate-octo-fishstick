@@ -84,8 +84,8 @@
     margin: auto;
 
     @media (max-width: 470px) {
-      grid-template-columns: repeat(2, minmax(50px, 100px));
-      grid-auto-rows: minmax(100px, 150px);
+      grid-template-columns: repeat(4, minmax(25px, 75px));
+      grid-auto-rows: minmax(50px, 100px);
       grid-template-rows: initial;
     }
   }
