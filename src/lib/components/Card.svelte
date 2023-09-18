@@ -33,7 +33,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-
+    color: var(--color-background);
     display: grid;
     align-items: center;
     justify-content: center;
