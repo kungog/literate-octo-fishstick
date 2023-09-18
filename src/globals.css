@@ -1,0 +1,173 @@
+:root {
+  --color-background: #334752;
+  --color-blue-active: #024744;
+  --color-blue: #007872;
+  --color-gold: #F6D971;
+  --color-silver: #929292;
+  --color-copper: #F2A965;
+  --color-accent: #FFF7AE;
+
+  --color-text: #ffffff;
+  --color-black: #1c1c1c;
+  --color-white: #fff;
+  --color-blured: rgba(252, 249, 239, 0.92);
+
+  --spacing-00: 0rem;
+  --spacing-02: 0.2rem;
+  --spacing-03: 0.3rem;
+  --spacing-04: 0.4rem;
+  --spacing-05: 0.5rem;
+  --spacing-06: 0.6rem;
+  --spacing-07: 0.7rem;
+  --spacing-08: 0.8rem;
+  --spacing-09: 0.9rem;
+  --spacing-10: 1rem;
+  --spacing-11: 1.1rem;
+  --spacing-12: 1.2rem;
+  --spacing-13: 1.3rem;
+  --spacing-14: 1.4rem;
+  --spacing-15: 1.5rem;
+  --spacing-16: 1.6rem;
+  --spacing-17: 1.7rem;
+  --spacing-18: 1.8rem;
+  --spacing-19: 1.9rem;
+  --spacing-20: 2rem;
+  --spacing-21: 2.1rem;
+  --spacing-22: 2.2rem;
+  --spacing-23: 2.3rem;
+  --spacing-24: 2.4rem;
+  --spacing-25: 2.5rem;
+  --spacing-26: 2.6rem;
+  --spacing-27: 2.7rem;
+  --spacing-28: 2.8rem;
+  --spacing-29: 2.9rem;
+  --spacing-30: 3rem;
+  --spacing-31: 3.1rem;
+  --spacing-32: 3.2rem;
+  --spacing-33: 3.3rem;
+  --spacing-34: 3.4rem;
+  --spacing-35: 3.5rem;
+  --spacing-36: 3.6rem;
+  --spacing-37: 3.7rem;
+  --spacing-38: 3.8rem;
+  --spacing-39: 3.9rem;
+  --spacing-40: 4rem;
+  --spacing-48: 4.8rem;
+  --spacing-54: 5.4rem;
+  --spacing-80: 8rem;
+  --spacing-130: 13rem;
+
+  --radius-02: 0.2rem;
+  --radius-04: 0.4rem;
+  --radius-08: 0.8rem;
+
+  --index-header: 10;
+  --index-panel: 30;
+  --index-modal: 20;
+}
+
+body {
+  overflow: hidden;
+  min-height: var(--main-height);
+  display: flex;
+  flex-direction: column;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-box);
+}
+
+.grid {
+  display: grid;
+}
+
+
+.column {
+  flex-direction: column;
+}
+
+.align-c {
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-b {
+  justify-content: space-between;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.border-divider {
+  position: relative;
+}
+
+.border-divider::before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: var(--color-box);
+  bottom: 0;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+/* 
+* Animations
+*/
+.circle {
+  position: relative;
+  border-radius: 999px;
+}
+
+.circle::after {
+  position: absolute;
+}
+
+.pulse {
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+}
